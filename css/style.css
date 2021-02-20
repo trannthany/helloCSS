@@ -24,20 +24,38 @@ h1:hover{
     color: thistle;
 }
 
-li:nth-child(2){
+/* li:nth-child(2){
     color:wheat;
-}
+} */
 
 td:only-child{
     color: purple;
 }
-
+/* 
 #youtube-link:link{
     color: blue;
 } 
 
 #youtube-link:visited{
     color: red;
-}
+} */
+
 
 /* Advance selector */
+/* every a tag that follows h2 */
+h2 + a {
+    color: red;
+}
+/* general sibling selector: any button after textarea sharing the same parent */
+textarea ~ button{
+    color: yellow;
+}
+/* Child selector : every li inside ul*/
+ul > li {
+    color:tomato;
+}
+/* Decendent selelctor: if li inside the ul */
+/* ul li {
+    color: green;
+} */
+
