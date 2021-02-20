@@ -6,6 +6,38 @@ body{
     color: blue;
 }
 
+/*3 basic selectors*/
 #anidselector{
     color: red;
 }
+
+.title{
+    color: yellow;
+}
+
+#contact-us{
+    color: green;
+}
+
+/* Pseudo Selectors */
+h1:hover{
+    color: thistle;
+}
+
+li:nth-child(2){
+    color:wheat;
+}
+
+td:only-child{
+    color: purple;
+}
+
+#youtube-link:link{
+    color: blue;
+} 
+
+#youtube-link:visited{
+    color: red;
+}
+
+/* Advance selector */
