@@ -6,7 +6,7 @@ body{
     color: blue;
 }
 
-/*3 basic selectors*/
+/*Lesson 1: 3 basic selectors*/
 #anidselector{
     color: red;
 }
@@ -19,7 +19,7 @@ body{
     color: green;
 }
 
-/* Pseudo Selectors */
+/* Lesson 2: Pseudo Selectors */
 h1:hover{
     color: thistle;
 }
@@ -41,7 +41,7 @@ td:only-child{
 } */
 
 
-/* Advance selector */
+/* Lesson 3: Advance selector */
 /* every a tag that follows h2 */
 h2 + a {
     color: red;
@@ -59,3 +59,28 @@ ul > li {
     color: green;
 } */
 
+/* Lesson 4: Attribute selector */
+/* the formate => tag_name[attr=value]{
+
+} */
+/* We want select every attribute that is class and the class itself is subtitle */
+h2[class=subtitle]{
+    color: lightcoral;
+}
+
+/* select all images with src starting value of ../images/ */
+img[src^="../images/"]{
+    border: 10px solid black;
+
+}
+/* the $= mean select anyting that has ending value of */
+/* google search Attribute selector if I forgot */
+
+/* white space attribute selector */
+/* let say we have subtitle and article-subtitle classes */
+.subtitle{
+    color:violet;
+}
+h2[class~=article-subtitle]{
+    background-color: green;
+}
